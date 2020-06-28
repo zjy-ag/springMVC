@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+        var user = {
+            name: "zjy",
+            age: 22,
+            sex: "男"
+        };
+
+        var json = JSON.stringify(user);
+        console.log(json);
+
+        var json1 = '{"name":"hello","age": "22","sex": "男"}';
+
+        var user1 = JSON.parse(json1);
+        console.log(user1.age,user1.name,user1.sex);
+
+
+        var user2 = JSON.parse(json);
+        console.log(user2.age,user2.name,user2.sex);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
