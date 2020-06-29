@@ -1,5 +1,6 @@
 package top.zhujiayu.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.xml.internal.bind.v2.runtime.reflect.Lister;
@@ -56,4 +57,24 @@ public class UserController {
         return objectMapper.writeValueAsString(new Date());
     }
 
+    @GetMapping("/json4")
+    public String json4() {
+        User user = new User("zjy", 22, "男");
+        return JSON.toJSONString(user);
+    }
+
+    @GetMapping("/json5")
+    public String json5() {
+
+        User user1 = new User("zjy1", 22, "男");
+        User user2 = new User("zjy2", 22, "男");
+        User user3 = new User("zjy3", 22, "男");
+
+        List<User> users = new ArrayList();
+        users.add(user1);
+        users.add(user2);
+        users.add(user3);
+
+        return JSON.toJSONString(users);
+    }
 }
