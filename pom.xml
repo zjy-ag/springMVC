@@ -11,10 +11,11 @@
     <modules>
         <module>springMVC-01-servlet</module>
         <module>springMVC-02-hellomvc</module>
-        <module>springMVC-03-annotation</module>
+<!--        <module>springMVC-03-annotation</module>-->
         <module>springMVC-03-annocation</module>
         <module>springMVC-04-controller</module>
         <module>springMVC-05-json</module>
+        <module>springMVC-06-AJAX</module>
     </modules>
 
     <dependencies>
@@ -42,6 +43,11 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
         </dependency>
     </dependencies>
 
