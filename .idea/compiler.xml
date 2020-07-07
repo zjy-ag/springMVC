@@ -9,13 +9,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springMVC-05-json" />
         <module name="springMVC-06-AJAX" />
-        <module name="springMVC-03-annocation" />
-        <module name="springMVC-02-hellomvc" />
+        <module name="springMVC-08-file" />
         <module name="springMVC-01-servlet" />
+        <module name="springMVC-07-intercepter" />
+        <module name="springMVC-02-hellomvc" />
+        <module name="springMVC-03-annocation" />
         <module name="springMVC-04-controller" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="intercepter" target="1.5" />
       <module name="springMVC-03-annotation" target="1.5" />
     </bytecodeTargetLevel>
   </component>
